@@ -6,155 +6,119 @@
   <title>Reynolds Rock Yard</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #222;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .logo-text {
-      font-size: 48px;
-      font-weight: bold;
-      background: linear-gradient(to top, red 50%, yellow 50%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    nav {
-      background-color: #444;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
+      background: #f9f9f9;
       color: #333;
-      margin-top: 40px;
     }
-
-    .price-table {
-      width: 100%;
+    header {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+    }
+    .title span:first-child {
+      color: yellow;
+    }
+    .title span:last-child {
+      color: red;
+    }
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #444;
+    }
+    .pricing-table {
+      margin-top: 20px;
       border-collapse: collapse;
+      width: 100%;
     }
-
-    .price-table th, .price-table td {
-      border: 1px solid #ddd;
-      padding: 10px;
+    .pricing-table th,
+    .pricing-table td {
+      border: 1px solid #ccc;
+      padding: 12px;
       text-align: center;
     }
-
-    .price-table th {
-      background-color: #f2f2f2;
+    .pricing-table th {
+      background-color: #eee;
     }
-
     footer {
-      background-color: #222;
-      color: white;
       text-align: center;
-      padding: 15px 0;
-      margin-top: 40px;
+      padding: 20px;
+      background: #222;
+      color: #fff;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo-text">REYNOLDS ROCK YARD</div>
+    <div class="title">
+      <span>REYNOLDS</span><span> ROCK YARD</span>
+    </div>
+    <p style="color: #aaa; font-style: italic;">Snowflake, Arizona — Just Minutes from the Petrified Forest National Park</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section>
+    <h2>Welcome to Reynolds Rock Yard</h2>
+    <p>
+      Nestled in the heart of Snowflake, Arizona, and just a stone's throw from the world-famous Petrified Forest, Reynolds Rock Yard offers a stunning collection of naturally occurring petrified wood, quartz-infused fossils, colorful mineral specimens, and desert treasures — all harvested directly from our land.
+    </p>
 
-  <div class="container">
-    <section id="about">
-      <h2>About Reynolds Rock Yard</h2>
-      <p>Welcome to Reynolds Rock Yard, located in beautiful Snowflake, Arizona. We specialize in natural stone, petrified wood, quartz, and other unique geological finds directly from our land. We offer hand-picked treasures perfect for collectors, artists, and home design.</p>
-    </section>
+    <h2>Our Rocks</h2>
+    <p>
+      Whether you're a rockhound, lapidary artist, decorator, or collector, we provide handpicked pieces that range from small polished beauties to giant raw showpieces. Every piece is unique — some with crystalized quartz interiors, others with preserved bark patterns or vibrant desert hues.
+    </p>
 
-    <section id="products">
-      <h2>Featured Products</h2>
-      <ul>
-        <li>Petrified Wood Quartz</li>
-        <li>Raw Quartz Crystals</li>
-        <li>Arrowheads & Ancient Pottery Fragments</li>
-        <li>Unique Decorative Stones</li>
-      </ul>
-    </section>
+    <h2>Sample Pricing</h2>
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Size</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small (1-3 inches)</td>
+          <td>Petrified wood, quartz or colorful minerals</td>
+          <td>$3 - $10 each</td>
+        </tr>
+        <tr>
+          <td>Medium (4-8 inches)</td>
+          <td>Bright colors, wood grain, or crystal structure</td>
+          <td>$15 - $40 each</td>
+        </tr>
+        <tr>
+          <td>Large (9+ inches)</td>
+          <td>Display quality, quartz-rich, or rare formations</td>
+          <td>$50 and up</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <section id="pricing">
-      <h2>Pricing Guide</h2>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Size</th>
-            <th>Color Grade</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Petrified Wood</td>
-            <td>Small (1–3")</td>
-            <td>Standard</td>
-            <td>$3–$5</td>
-          </tr>
-          <tr>
-            <td>Petrified Wood</td>
-            <td>Medium (4–7")</td>
-            <td>High Color</td>
-            <td>$8–$15</td>
-          </tr>
-          <tr>
-            <td>Quartz</td>
-            <td>Small Clusters</td>
-            <td>Clear/White</td>
-            <td>$5–$10</td>
-          </tr>
-          <tr>
-            <td>Decorative Stone</td>
-            <td>Large (>8")</td>
-            <td>Premium Pattern</td>
-            <td>$20–$50</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> bigdaddyaz82@gmail.com</p>
-      <p><strong>Location:</strong> Snowflake, AZ</p>
-      <p><strong>Facebook:</strong> Reynolds Rock Yard (coming soon!)</p>
-    </section>
-  </div>
+    <h2>Visit or Contact Us</h2>
+    <p>
+      We welcome rock lovers by appointment. Come walk the land and handpick your treasures. Local pickup available, and we ship select pieces upon request.
+    </p>
+    <p>
+      📍 Location: Snowflake, AZ<br />
+      📞 Call/Text: (480) 465-9603<br />
+      📧 Email: bigdaddyaz82@gmail.com<br />
+      🪨 Instagram/Facebook: Reynolds Rock Yard
+    </p>
+  </section>
 
   <footer>
     &copy; 2025 Reynolds Rock Yard. All rights reserved.
   </footer>
+
 </body>
 </html>
