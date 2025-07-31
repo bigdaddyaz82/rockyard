@@ -3,166 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Reynolds Rock Yard – Petrified Wood, Quartz, and Natural Treasures from Snowflake, Arizona."/>
   <title>Reynolds Rock Yard</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      padding: 0;
     }
+
     header {
-      background: #4a2e14;
+      background-color: #222;
       color: white;
-      padding: 20px 10px;
+      padding: 20px 0;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
+
+    .logo-text {
+      font-size: 48px;
+      font-weight: bold;
+      background: linear-gradient(to top, red 50%, yellow 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     nav {
-      background: #333;
+      background-color: #444;
+      padding: 10px;
       text-align: center;
-      padding: 10px 0;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    section {
-      padding: 20px;
-      max-width: 900px;
+
+    .container {
+      max-width: 1000px;
       margin: auto;
-    }
-    h2 {
-      color: #4a2e14;
-    }
-    .rocks {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .rock-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 15px;
-    }
-    .rock-card img {
-      width: 100%;
-      border-radius: 6px;
-    }
-    footer {
-      text-align: center;
       padding: 20px;
-      background: #333;
-      color: white;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    h2 {
+      color: #333;
+      margin-top: 40px;
+    }
+
     .price-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
     }
+
     .price-table th, .price-table td {
-      border: 1px solid #ccc;
-      padding: 8px;
+      border: 1px solid #ddd;
+      padding: 10px;
       text-align: center;
     }
+
     .price-table th {
-      background-color: #e2d8ce;
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Reynolds Rock Yard</h1>
-    <p>Snowflake, Arizona · Natural Petrified Wood, Quartz, & Rare Desert Finds</p>
+    <div class="logo-text">REYNOLDS ROCK YARD</div>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#inventory">Inventory</a>
+    <a href="#products">Products</a>
     <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to Reynolds Rock Yard – located on private family land just outside Snowflake, Arizona. We specialize in naturally occurring petrified wood, desert quartz, and other unique geological finds straight from the land. Each piece is hand-collected and full of natural history and beauty.</p>
-  </section>
+  <div class="container">
+    <section id="about">
+      <h2>About Reynolds Rock Yard</h2>
+      <p>Welcome to Reynolds Rock Yard, located in beautiful Snowflake, Arizona. We specialize in natural stone, petrified wood, quartz, and other unique geological finds directly from our land. We offer hand-picked treasures perfect for collectors, artists, and home design.</p>
+    </section>
 
-  <section id="inventory">
-    <h2>Featured Inventory</h2>
-    <div class="rocks">
-      <div class="rock-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Petrified_wood_1.JPG/640px-Petrified_wood_1.JPG" alt="Petrified Wood Sample">
-        <p><strong>Petrified Wood (Large)</strong><br>Rich wood grain with quartz crystal lining.</p>
-      </div>
-      <div class="rock-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Petrified_Wood_%28Quartz%29.jpg" alt="Quartz Petrified Wood">
-        <p><strong>Quartz-Fused Petrified Piece</strong><br>High-gloss finish, ideal for collectors.</p>
-      </div>
-      <div class="rock-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Petrified_Wood_Fossil.jpg" alt="Polished Petrified Slab">
-        <p><strong>Polished Desert Slab</strong><br>Ideal for display or cutting.</p>
-      </div>
-    </div>
-  </section>
+    <section id="products">
+      <h2>Featured Products</h2>
+      <ul>
+        <li>Petrified Wood Quartz</li>
+        <li>Raw Quartz Crystals</li>
+        <li>Arrowheads & Ancient Pottery Fragments</li>
+        <li>Unique Decorative Stones</li>
+      </ul>
+    </section>
 
-  <section id="pricing">
-    <h2>Price Chart</h2>
-    <table class="price-table">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Size</th>
-          <th>Color/Quality</th>
-          <th>Price (USD)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Petrified Wood</td>
-          <td>Small (palm size)</td>
-          <td>Light grain</td>
-          <td>$10 - $25</td>
-        </tr>
-        <tr>
-          <td>Petrified Wood</td>
-          <td>Medium (fist size)</td>
-          <td>Rich grain, quartz</td>
-          <td>$30 - $75</td>
-        </tr>
-        <tr>
-          <td>Petrified Wood</td>
-          <td>Large (display)</td>
-          <td>Multicolor w/ crystal</td>
-          <td>$100+</td>
-        </tr>
-        <tr>
-          <td>Quartz Pieces</td>
-          <td>Any size</td>
-          <td>Clear or tinted</td>
-          <td>$5 - $50</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>Wholesale & bulk pricing available upon request.</p>
-  </section>
+    <section id="pricing">
+      <h2>Pricing Guide</h2>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Size</th>
+            <th>Color Grade</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Petrified Wood</td>
+            <td>Small (1–3")</td>
+            <td>Standard</td>
+            <td>$3–$5</td>
+          </tr>
+          <tr>
+            <td>Petrified Wood</td>
+            <td>Medium (4–7")</td>
+            <td>High Color</td>
+            <td>$8–$15</td>
+          </tr>
+          <tr>
+            <td>Quartz</td>
+            <td>Small Clusters</td>
+            <td>Clear/White</td>
+            <td>$5–$10</td>
+          </tr>
+          <tr>
+            <td>Decorative Stone</td>
+            <td>Large (>8")</td>
+            <td>Premium Pattern</td>
+            <td>$20–$50</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:bigdaddyaz82@gmail.com">bigdaddyaz82@gmail.com</a></p>
-    <p>Location: Snowflake, Arizona (Appointments Only)</p>
-    <p>Facebook: <a href="https://www.facebook.com/ReynoldsPaintingandResurfacingLLC" target="_blank">Reynolds Painting and Resurfacing LLC</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> bigdaddyaz82@gmail.com</p>
+      <p><strong>Location:</strong> Snowflake, AZ</p>
+      <p><strong>Facebook:</strong> Reynolds Rock Yard (coming soon!)</p>
+    </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Reynolds Rock Yard · All rights reserved</p>
+    &copy; 2025 Reynolds Rock Yard. All rights reserved.
   </footer>
 </body>
-             </html>
+</html>
